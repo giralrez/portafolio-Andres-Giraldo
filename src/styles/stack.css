@@ -1,0 +1,58 @@
+.section-intro {
+  margin-bottom: 48px;
+}
+.section-intro h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+.section-intro p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 12px;
+  background: var(--border);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  cursor: default;
+}
+.tech-card:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+.tech-card img { width: 32px; height: 32px; }
+.tech-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--bg);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--fg);
+}
+.tech-card span { font-size: 13px; font-weight: 500; }
+.tech-card small {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .tech-grid { grid-template-columns: repeat(3, 1fr); }
+}

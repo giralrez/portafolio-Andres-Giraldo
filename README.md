@@ -8,7 +8,7 @@ Portafolio personal construido con Vite + React + TypeScript.
 - **Framework:** React 19
 - **Build:** Vite 6
 - **Lint/Format:** Biome
-- **Deploy:** Netlify
+- **Deploy:** Vercel
 
 ## Inicio rapido
 
