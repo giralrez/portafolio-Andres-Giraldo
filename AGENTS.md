@@ -7,7 +7,7 @@
 
 ## Project
 
-CV/Portafolio personal — Vite + React 19 + TypeScript, linted with Biome, deployed to Netlify.
+CV/Portafolio personal — Vite + React 19 + TypeScript, linted with Biome, deployed to Vercel.
 
 ## Commands
 
@@ -24,10 +24,13 @@ CV/Portafolio personal — Vite + React 19 + TypeScript, linted with Biome, depl
 
 ## Architecture
 
-- `src/` — React components and styles
+- `src/` — React components, hooks, and data
   - `main.tsx` — entry point, renders `<App />`
-  - `App.tsx` — root component
-  - `index.css` — global styles (CSS reset + base)
+  - `App.tsx` — root component (orchestrator)
+  - `components/` — modular UI components (Navbar, Hero, About, Stack, Projects, Certifications, Contributions, Experience, Footer)
+  - `data/` — JSON data files (profile, projects, skills, certifications, experience, github)
+  - `hooks/` — custom hooks (useGitHubContributions)
+  - `styles/` — CSS modules for each component
 - `public/` — static assets served at root
 - `index.html` — SPA shell (loads `/src/main.tsx`)
 
@@ -40,4 +43,4 @@ CV/Portafolio personal — Vite + React 19 + TypeScript, linted with Biome, depl
 - **TypeScript:** Strict mode enabled. Path alias `@/` maps to `src/`.
 - **Imports:** Use `@/` alias for absolute imports (e.g., `import { Foo } from "@/components/Foo"`).
 - **React:** Functional components only, no class components. React 19 features available.
-- **Deploy:** Netlify. SPA fallback redirect configured in `public/_redirects`.
+- **Deploy:** Vercel. SPA fallback configured in `vercel.json`.
