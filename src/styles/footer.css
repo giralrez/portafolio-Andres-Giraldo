@@ -10,30 +10,41 @@
   gap: 48px;
   margin-bottom: 48px;
 }
+
 .contact-main h2 {
   font-size: clamp(32px, 5vw, 48px);
   font-weight: 700;
   line-height: 1.15;
 }
+
 .contact-main h2 em {
   font-style: italic;
-  color: var(--muted);
+  color: var(--accent);
 }
+
 .contact-main p {
   font-size: 15px;
   color: var(--muted);
   margin-bottom: 16px;
 }
+
 .email {
   font-size: 16px;
   font-weight: 500;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  transition: opacity var(--transition);
+  transition: color var(--transition);
 }
-.email:hover { opacity: 0.7; }
-.email svg { width: 14px; height: 14px; }
+
+.email:hover {
+  color: var(--accent);
+}
+
+.email svg {
+  width: 14px;
+  height: 14px;
+}
 
 .socials {
   display: flex;
@@ -43,6 +54,7 @@
   border-bottom: 1px solid var(--border);
   margin-bottom: 24px;
 }
+
 .socials a {
   display: flex;
   align-items: center;
@@ -50,8 +62,14 @@
   font-size: 14px;
   color: var(--muted);
   transition: color var(--transition);
+  padding: 8px;
+  border-radius: var(--radius);
 }
-.socials a:hover { color: var(--fg); }
+
+.socials a:hover {
+  color: var(--accent);
+}
+
 .socials b {
   width: 28px;
   height: 28px;
@@ -59,12 +77,17 @@
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  background: var(--border);
+  background: var(--color-primary);
+  font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 700;
-  color: var(--fg);
+  color: var(--accent);
 }
-.socials svg { width: 14px; height: 14px; }
+
+.socials svg {
+  width: 14px;
+  height: 14px;
+}
 
 .footer-bottom {
   display: flex;
@@ -72,13 +95,27 @@
   font-size: 13px;
   color: var(--muted);
 }
+
 .footer-bottom a {
   transition: color var(--transition);
 }
-.footer-bottom a:hover { color: var(--fg); }
+
+.footer-bottom a:hover {
+  color: var(--accent);
+}
 
 @media (max-width: 768px) {
-  .contact-main { flex-direction: column; }
-  .socials { flex-wrap: wrap; gap: 16px; }
-  .footer-bottom { flex-direction: column; gap: 8px; }
+  .contact-main {
+    flex-direction: column;
+  }
+
+  .socials {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
