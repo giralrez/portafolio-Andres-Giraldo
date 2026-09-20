@@ -1,0 +1,75 @@
+.experience h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  padding-left: 24px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+
+.timeline article {
+  position: relative;
+  padding: 0 0 40px 0;
+}
+
+.timeline article::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+}
+
+.timeline article:last-child {
+  padding-bottom: 0;
+}
+
+.timeline time {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.timeline h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.timeline > article > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.timeline > article > div > span {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.timeline p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+}

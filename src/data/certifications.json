@@ -1,0 +1,16 @@
+[
+  { "name": "AWS Academy Graduate — Cloud Foundations", "org": "AWS Academy" },
+  { "name": "CCNA: Switching, Routing & Wireless Essentials", "org": "Cisco Networking Academy" },
+  { "name": "Python Essentials 1", "org": "Cisco Networking Academy" },
+  { "name": "JavaScript Essentials 1", "org": "Cisco Networking Academy" },
+  { "name": "Introduction to Cybersecurity", "org": "Cisco Networking Academy" },
+  { "name": "Introduction to Data Science", "org": "Cisco Networking Academy" },
+  { "name": "English for IT 1", "org": "Cisco Networking Academy" },
+  { "name": "Learn-A-Thon 2023 — Participant", "org": "Cisco Networking Academy" },
+  { "name": "CRUD Operations", "org": "MongoDB" },
+  { "name": "Relational to Document Model", "org": "MongoDB" },
+  { "name": "Fundamentals of Data Transformation", "org": "MongoDB" },
+  { "name": "Schema Design Optimization", "org": "MongoDB" },
+  { "name": "Schema Patterns and Anti-patterns", "org": "MongoDB" },
+  { "name": "Advanced Schema Patterns and Anti-patterns", "org": "MongoDB" }
+]

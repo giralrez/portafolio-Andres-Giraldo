@@ -1,0 +1,20 @@
+[
+  {
+    "period": "2024 — Present",
+    "role": "Independent Full-Stack Developer",
+    "company": "Freelance",
+    "description": "Designing and shipping complete products for clients and my own ventures — web apps in React/Next.js, mobile apps in Flutter, backends on Node, Supabase and Firebase."
+  },
+  {
+    "period": "2025",
+    "role": "Creator — MiProyecto",
+    "company": "Personal product",
+    "description": "Built a complete web application for business management from zero to working product: data model, API, and a clean interface."
+  },
+  {
+    "period": "Ongoing",
+    "role": "AI Engineering & Certifications",
+    "company": "Continuous learning",
+    "description": "Deepening AI-assisted development with Claude and modern tooling; verified credentials published on Credly."
+  }
+]

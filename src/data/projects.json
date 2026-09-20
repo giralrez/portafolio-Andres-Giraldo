@@ -1,0 +1,13 @@
+[
+  {
+    "id": "mi-proyecto",
+    "title": "MiProyecto",
+    "titleHighlight": "Proyecto",
+    "eyebrow": "WEB APP · SAAS · 2025",
+    "description": "Una aplicación web completa para gestión de negocios — dando a las empresas una imagen clara y en tiempo real de sus operaciones, sin la complejidad de soluciones empresariales pesadas.",
+    "tech": ["React", "Supabase", "Node.js", "TypeScript", "PostgreSQL"],
+    "github": "#!",
+    "demo": "#contact",
+    "index": "01"
+  }
+]

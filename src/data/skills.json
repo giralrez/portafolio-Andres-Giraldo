@@ -1,0 +1,20 @@
+[
+  { "name": "Python", "icon": "python" },
+  { "name": "Flutter", "icon": "flutter" },
+  { "name": "React", "icon": "react" },
+  { "name": "Next.js", "icon": "nextjs" },
+  { "name": "TypeScript", "icon": "typescript" },
+  { "name": "Node.js", "icon": "nodejs" },
+  { "name": "Supabase", "icon": "supabase" },
+  { "name": "Firebase", "icon": "firebase" },
+  { "name": "PostgreSQL", "icon": "postgresql" },
+  { "name": "C#", "icon": "csharp" },
+  { "name": "C++", "icon": "cpp" },
+  { "name": "Java", "icon": "java" },
+  { "name": "Tailwind", "icon": "tailwind" },
+  { "name": "Claude", "icon": "claude" },
+  { "name": "Vercel", "icon": "vercel" },
+  { "name": "Git & GitHub", "icon": "git" },
+  { "name": "Docker", "icon": "docker" },
+  { "name": "Linux", "icon": "linux" }
+]

@@ -1,0 +1,129 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.nav nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav nav a {
+  font-size: 14px;
+  color: var(--muted);
+  transition: color var(--transition);
+  padding: 8px 0;
+}
+
+.nav nav a:hover {
+  color: var(--fg);
+}
+
+.talk-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+}
+
+.talk-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.talk-link svg {
+  width: 14px;
+  height: 14px;
+}
+
+.menu-button {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-button span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--fg);
+  transition: var(--transition);
+}
+
+.menu-button:hover span {
+  background: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .nav nav {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    background: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(12px);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0;
+  }
+
+  .nav nav.open {
+    max-height: 300px;
+    padding: 16px 0;
+  }
+
+  .nav nav a {
+    padding: 16px 0;
+    font-size: 16px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .talk-link {
+    display: none;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+}

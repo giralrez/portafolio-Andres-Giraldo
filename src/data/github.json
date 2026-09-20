@@ -1,0 +1,10 @@
+{
+  "username": "andresgiraldo",
+  "languages": [
+    { "name": "JavaScript", "percent": 55, "color": "#f1e05a" },
+    { "name": "TypeScript", "percent": 24, "color": "#3178c6" },
+    { "name": "Dart", "percent": 13, "color": "#00b4ab" },
+    { "name": "PLpgSQL", "percent": 4, "color": "#336791" },
+    { "name": "Other", "percent": 4, "color": "#555" }
+  ]
+}
