@@ -34,6 +34,23 @@ CV/Portafolio personal — Vite + React 19 + TypeScript, linted with Biome, depl
 - `public/` — static assets served at root
 - `index.html` — SPA shell (loads `/src/main.tsx`)
 
+## Design System
+
+- **Theme:** Dark Mode OLED (`#0f172a` background)
+- **Accent:** `#22c55e` (green)
+- **Typography:** IBM Plex Sans (body) + JetBrains Mono (headings/code)
+- **Accessibility:** focus-visible, prefers-reduced-motion, 4.5:1 contrast
+
+## Editing Content
+
+Para editar el contenido del portafolio, modifica los archivos JSON en `src/data/`:
+- `profile.json` — nombre, bio, stats, email, redes sociales
+- `projects.json` — proyectos con tech stack y links
+- `skills.json` — tecnologías del stack
+- `certifications.json` — credenciales
+- `experience.json` — experiencia laboral
+- `github.json` — configuración de languages
+
 ## Conventions
 
 - **Package manager:** Bun (lockfile: `bun.lock`). Do not commit `package-lock.json` or `yarn.lock`.
