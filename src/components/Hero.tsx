@@ -27,14 +27,14 @@ function Hero({ profile, currentRole }: HeroProps) {
       <div className="hero-bottom">
         <div className="hero-actions">
           <a className="button button-fill" href="#work">
-            Explore my work <Arrow />
+            Ver mi trabajo <Arrow />
           </a>
           <a className="button" href="#contact">
-            Get in touch <Arrow />
+            Contáctame <Arrow />
           </a>
         </div>
         <a className="scroll" href="#about">
-          <span>Scroll</span>
+          <span>Desliza</span>
           <i />
         </a>
       </div>

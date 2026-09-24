@@ -13,22 +13,26 @@ function Contributions() {
       <SectionHead number="05" label="GitHub" />
       <div className="github-head">
         <div>
-          <h2>Open-source activity</h2>
+          <h2>Actividad open-source</h2>
           <span>@{githubData.username}</span>
         </div>
-        <a href={`https://github.com/${githubData.username}`}>
-          Open profile <Arrow />
+        <a
+          href={`https://github.com/${githubData.username}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Abrir perfil <Arrow />
         </a>
       </div>
       <div className="contribution-card">
         <div className="contribution-top">
-          <span>Contributions · last 12 months</span>
+          <span>Contribuciones · últimos 12 meses</span>
           <span>
-            Less <i />
+            Menos <i />
             <i />
             <i />
             <i />
-            <i /> More
+            <i /> Más
           </span>
         </div>
         <div className="contribution-grid">
@@ -45,23 +49,23 @@ function Contributions() {
       <div className="github-stats">
         <div>
           <strong>{stats.contributions}</strong>
-          <span>Contributions</span>
+          <span>Contribuciones</span>
         </div>
         <div>
           <strong>{stats.repositories}</strong>
-          <span>Repositories</span>
+          <span>Repositorios</span>
         </div>
         <div>
           <strong>{stats.stars}</strong>
-          <span>Stars earned</span>
+          <span>Estrellas ganadas</span>
         </div>
         <div>
           <strong>{stats.streak}</strong>
-          <span>Commit streak</span>
+          <span>Racha de commits</span>
         </div>
       </div>
       <div className="languages">
-        <span>Top languages</span>
+        <span>Lenguajes principales</span>
         <div className="language-bar">
           {githubData.languages.map((lang) => (
             <i

@@ -3,7 +3,7 @@
   "username": "giralrez",
   "email": "andresras103@gmail.com",
   "roles": ["Ingeniero de Software", "Analista de Datos", "En transición a Ingeniería de Datos"],
-  "availability": "Available for projects",
+  "availability": "Disponible para proyectos",
   "year": "2026",
   "heroTagline": "Automatización, Machine Learning y datos — con base en ingeniería real.",
   "about": {
@@ -25,8 +25,8 @@
   },
   "footer": {
     "tagline": "Automatización, Machine Learning y datos con base en ingeniería real.",
-    "cta": "Open to freelance projects, product collaborations and full-time opportunities.",
+    "cta": "Abierto a proyectos freelance, colaboraciones de producto y oportunidades full-time.",
     "copyright": "© 2026 Andres Giraldo",
-    "builtWith": "Designed & built with AI-native tooling"
+    "builtWith": "Diseñado y construido con herramientas AI-native"
   }
 }

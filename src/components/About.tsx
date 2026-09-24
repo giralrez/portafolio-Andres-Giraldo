@@ -8,12 +8,12 @@ interface AboutProps {
 function About({ profile }: AboutProps) {
   return (
     <section className="section shell about" id="about">
-      <SectionHead number="01" label="About" />
+      <SectionHead number="01" label="Acerca" />
       <div className="about-grid">
         <div className="portrait-wrap reveal">
           <img src={profile.about.photo} alt={profile.name} />
           <div className="portrait-note">
-            <i /> building right now
+            <i /> construyendo ahora
           </div>
         </div>
         <div className="about-copy">

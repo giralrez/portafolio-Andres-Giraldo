@@ -7,20 +7,20 @@ interface NavbarProps {
 }
 
 const navLinks = [
-  ["About", "about"],
-  ["Skills", "skills"],
-  ["Work", "work"],
+  ["Acerca", "about"],
+  ["Stack", "skills"],
+  ["Proyectos", "work"],
   ["GitHub", "github"],
-  ["Contact", "contact"],
+  ["Contacto", "contact"],
 ] as const;
 
 function Navbar({ menuOpen, onToggleMenu, onCloseMenu }: NavbarProps) {
   return (
     <header className="nav shell">
       <a className="logo" href="#top">
-        andres<span>.dev</span>
+        4ndr3s<span>D3v</span>
       </a>
-      <nav className={menuOpen ? "open" : ""} aria-label="Main navigation">
+      <nav className={menuOpen ? "open" : ""} aria-label="Navegación principal">
         {navLinks.map(([name, id]) => (
           <a href={`#${id}`} key={id} onClick={onCloseMenu}>
             {name}
@@ -28,12 +28,12 @@ function Navbar({ menuOpen, onToggleMenu, onCloseMenu }: NavbarProps) {
         ))}
       </nav>
       <a className="talk-link" href="#contact">
-        Let's talk <Arrow />
+        Hablemos <Arrow />
       </a>
       <button
         className="menu-button"
         type="button"
-        aria-label="Toggle menu"
+        aria-label="Abrir menú"
         aria-expanded={menuOpen}
         onClick={onToggleMenu}
       >
