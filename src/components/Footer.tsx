@@ -10,7 +10,7 @@ function Footer({ profile }: FooterProps) {
   return (
     <footer className="contact" id="contact">
       <div className="shell">
-        <SectionHead number="07" label="Contact" />
+        <SectionHead number="07" label="Contacto" />
         <div className="contact-main">
           <h2>{profile.footer.tagline}</h2>
           <div>
@@ -25,7 +25,7 @@ function Footer({ profile }: FooterProps) {
             href={profile.socials.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn profile"
+            aria-label="Perfil de LinkedIn"
           >
             <b>in</b>LinkedIn <Arrow />
           </a>
@@ -33,26 +33,26 @@ function Footer({ profile }: FooterProps) {
             href={profile.socials.github}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub profile"
+            aria-label="Perfil de GitHub"
           >
             <b>gh</b>GitHub <Arrow />
           </a>
-          <a href={`mailto:${profile.email}`} aria-label="Send email">
+          <a href={`mailto:${profile.email}`} aria-label="Enviar email">
             <b>@</b>Email <Arrow />
           </a>
           <a
             href={profile.socials.resume}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Download resume PDF"
+            aria-label="Descargar hoja de vida en PDF"
           >
-            Download resume <Arrow />
+            Descargar CV <Arrow />
           </a>
         </div>
         <div className="footer-bottom">
           <span>{profile.footer.copyright}</span>
           <span>{profile.footer.builtWith}</span>
-          <a href="#top">Back to top ↑</a>
+          <a href="#top">Volver arriba ↑</a>
         </div>
       </div>
     </footer>

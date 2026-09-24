@@ -4,8 +4,8 @@ import SectionHead from "./SectionHead";
 function Experience() {
   return (
     <section className="section shell experience">
-      <SectionHead number="06" label="Experience" />
-      <h2>The journey so far</h2>
+      <SectionHead number="06" label="Experiencia" />
+      <h2>El camino hasta ahora</h2>
       <div className="timeline">
         {experience.map((item) => (
           <article key={item.period}>

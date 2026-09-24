@@ -11,15 +11,15 @@ function Certifications() {
   return (
     <section className="section credentials" id="certifications">
       <div className="shell">
-        <SectionHead number="04" label="Certifications" />
+        <SectionHead number="04" label="Certificaciones" />
         <div className="credential-heading">
-          <h2>Verified credentials</h2>
+          <h2>Credenciales verificadas</h2>
           <div>
             <a href="#!">
-              Academic transcript (PDF) <Arrow />
+              Constancia académica (PDF) <Arrow />
             </a>
             <a href="#!">
-              View all on Credly <Arrow />
+              Ver todas en Credly <Arrow />
             </a>
           </div>
         </div>

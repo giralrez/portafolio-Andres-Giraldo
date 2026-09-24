@@ -1,3 +1,4 @@
+import githubData from "@/data/github.json";
 import projects from "@/data/projects.json";
 import Arrow from "./Arrow";
 import SectionHead from "./SectionHead";
@@ -7,9 +8,9 @@ const featured = projects[0] as (typeof projects)[number];
 function Projects() {
   return (
     <section className="section shell work" id="work">
-      <SectionHead number="03" label="Selected work" />
+      <SectionHead number="03" label="Proyectos" />
       <div className="work-heading">
-        <h2>Featured project</h2>
+        <h2>Proyecto destacado</h2>
         <span>{featured.eyebrow}</span>
       </div>
       <article className="project-card">
@@ -24,7 +25,7 @@ function Projects() {
           </div>
           <div className="dash-content">
             <div className="dash-top">
-              <span>Overview</span>
+              <span>Resumen</span>
               <i />
             </div>
             <div className="dash-stats">
@@ -66,19 +67,23 @@ function Projects() {
               GitHub <Arrow />
             </a>
             <a href={featured.demo}>
-              Request a demo <Arrow />
+              Ver demo <Arrow />
             </a>
           </div>
         </div>
       </article>
       <div className="more-work">
         <div>
-          <span>Up next</span>
-          <h3>More projects in progress</h3>
+          <span>A continuación</span>
+          <h3>Más proyectos en progreso</h3>
         </div>
-        <p>New AI and automation work will land here soon.</p>
-        <a href="#!">
-          Follow on GitHub <Arrow />
+        <p>Nuevo trabajo en IA y automatización llegará pronto aquí.</p>
+        <a
+          href={`https://github.com/${githubData.username}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Seguir en GitHub <Arrow />
         </a>
       </div>
     </section>

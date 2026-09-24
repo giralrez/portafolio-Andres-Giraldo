@@ -7,13 +7,13 @@ function Stack() {
       <SectionHead number="02" label="Stack" />
       <div className="section-intro">
         <h2>
-          Technologies
-          <br />I work with
+          Tecnologías
+          <br /> con las que trabajo
         </h2>
         <p>
-          A full-spectrum stack — mobile, web,
+          Un stack completo — móvil, web,
           <br />
-          backend, data and AI.
+          backend, datos e IA.
         </p>
       </div>
       <div className="tech-grid">
