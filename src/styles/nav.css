@@ -35,10 +35,16 @@
   color: var(--muted);
   transition: color var(--transition);
   padding: 8px 0;
+  border-bottom: 2px solid transparent;
 }
 
 .nav nav a:hover {
   color: var(--fg);
+}
+
+.nav nav a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 .talk-link {

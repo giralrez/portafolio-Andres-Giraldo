@@ -2,6 +2,7 @@ import Arrow from "./Arrow";
 
 interface NavbarProps {
   menuOpen: boolean;
+  activeId: string;
   onToggleMenu: () => void;
   onCloseMenu: () => void;
 }
@@ -14,7 +15,12 @@ const navLinks = [
   ["Contacto", "contact"],
 ] as const;
 
-function Navbar({ menuOpen, onToggleMenu, onCloseMenu }: NavbarProps) {
+function Navbar({
+  menuOpen,
+  activeId,
+  onToggleMenu,
+  onCloseMenu,
+}: NavbarProps) {
   return (
     <header className="nav shell">
       <a className="logo" href="#top">
@@ -22,7 +28,13 @@ function Navbar({ menuOpen, onToggleMenu, onCloseMenu }: NavbarProps) {
       </a>
       <nav className={menuOpen ? "open" : ""} aria-label="Navegación principal">
         {navLinks.map(([name, id]) => (
-          <a href={`#${id}`} key={id} onClick={onCloseMenu}>
+          <a
+            href={`#${id}`}
+            key={id}
+            onClick={onCloseMenu}
+            className={activeId === id ? "active" : undefined}
+            aria-current={activeId === id ? "page" : undefined}
+          >
             {name}
           </a>
         ))}
