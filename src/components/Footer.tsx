@@ -12,11 +12,7 @@ function Footer({ profile }: FooterProps) {
       <div className="shell">
         <SectionHead number="07" label="Contact" />
         <div className="contact-main">
-          <h2>
-            {profile.footer.tagline.split("worth")[0]}
-            <br />
-            <em>worth{profile.footer.tagline.split("worth")[1]}</em>
-          </h2>
+          <h2>{profile.footer.tagline}</h2>
           <div>
             <p>{profile.footer.cta}</p>
             <a className="email" href={`mailto:${profile.email}`}>
@@ -25,16 +21,31 @@ function Footer({ profile }: FooterProps) {
           </div>
         </div>
         <div className="socials">
-          <a href={profile.socials.linkedin}>
+          <a
+            href={profile.socials.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
             <b>in</b>LinkedIn <Arrow />
           </a>
-          <a href={profile.socials.github}>
+          <a
+            href={profile.socials.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+          >
             <b>gh</b>GitHub <Arrow />
           </a>
-          <a href={`mailto:${profile.email}`}>
+          <a href={`mailto:${profile.email}`} aria-label="Send email">
             <b>@</b>Email <Arrow />
           </a>
-          <a href={profile.socials.resume}>
+          <a
+            href={profile.socials.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download resume PDF"
+          >
             Download resume <Arrow />
           </a>
         </div>

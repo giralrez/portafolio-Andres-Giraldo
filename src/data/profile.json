@@ -2,29 +2,29 @@
   "name": "Andres Giraldo",
   "username": "giralrez",
   "email": "andresras103@gmail.com",
-  "roles": ["AI Engineer", "Full Stack Developer", "Cloud Engineer"],
+  "roles": ["Ingeniero de Software", "Analista de Datos", "En transición a Ingeniería de Datos"],
   "availability": "Available for projects",
   "year": "2026",
-  "heroTagline": "builds intelligent software.",
+  "heroTagline": "Automatización, Machine Learning y datos — con base en ingeniería real.",
   "about": {
-    "headline": "Independent full-stack developer with an AI-native workflow.",
-    "bio": "Soy Andres Giraldo — un desarrollador que entrega productos completos: desde modelos de datos y APIs hasta interfaces pulidas multiplataforma. Trabajo con IA como herramienta principal, combinando Claude con un stack robusto de React, Flutter, Node y Supabase para pasar de la idea a producción rápidamente.",
-    "focus": "Mi enfoque: software de negocio que se siente natural.",
-    "photo": "https://placehold.co/400x500"
+    "headline": "Ingeniero de Software transformando procesos en datos accionables.",
+    "bio": "Ingeniero de Software en transición hacia Datos. Construyo automatizaciones, modelos de ML y sistemas que convierten procesos manuales en decisiones basadas en datos.",
+    "focus": "SQL, Python y Machine Learning aplicados a problemas reales de negocio.",
+    "photo": "/foto.jpg"
   },
   "stats": [
-    { "value": "3+", "label": "Years coding" },
-    { "value": "3", "label": "Projects built" },
-    { "value": "18+", "label": "Technologies" },
-    { "value": "AI", "label": "AI Native workflow" }
+    { "value": "~8,000+", "label": "líneas de Python en producción" },
+    { "value": "3", "label": "modelos ML en ensamble" },
+    { "value": "5", "label": "proyectos de portafolio" },
+    { "value": "RPA", "label": "automatización en producción" }
   ],
   "socials": {
-    "linkedin": "#!",
-    "github": "#!",
-    "resume": "#!"
+    "linkedin": "https://www.linkedin.com/in/andres-giraldo-ramirez-a21190341",
+    "github": "https://github.com/giralrez",
+    "resume": "/cv.pdf"
   },
   "footer": {
-    "tagline": "Let's build something worth talking about.",
+    "tagline": "Automatización, Machine Learning y datos con base en ingeniería real.",
     "cta": "Open to freelance projects, product collaborations and full-time opportunities.",
     "copyright": "© 2026 Andres Giraldo",
     "builtWith": "Designed & built with AI-native tooling"
