@@ -1,4 +1,5 @@
 import certifications from "@/data/certifications.json";
+import { useReveal } from "@/hooks/useReveal";
 import Arrow from "./Arrow";
 import SectionHead from "./SectionHead";
 
@@ -8,8 +9,14 @@ const credentials = certifications.map((item) => ({
 }));
 
 function Certifications() {
+  const sectionRef = useReveal<HTMLElement>();
+
   return (
-    <section className="section credentials" id="certifications">
+    <section
+      className="section credentials reveal"
+      id="certifications"
+      ref={sectionRef}
+    >
       <div className="shell">
         <SectionHead number="04" label="Certificaciones" />
         <div className="credential-heading">

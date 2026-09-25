@@ -9,10 +9,16 @@ interface HeroProps {
 function Hero({ profile, currentRole }: HeroProps) {
   return (
     <section className="hero shell">
-      <div className="availability">
+      <div
+        className="availability hero-enter"
+        style={{ "--delay": "0ms" } as React.CSSProperties}
+      >
         <i /> {profile.availability} <span>{profile.year}</span>
       </div>
-      <div className="hero-title">
+      <div
+        className="hero-title hero-enter"
+        style={{ "--delay": "80ms" } as React.CSSProperties}
+      >
         <h1>
           <span>{profile.name}</span>
           <br />
@@ -20,11 +26,17 @@ function Hero({ profile, currentRole }: HeroProps) {
         </h1>
         <span className="asterisk">✳</span>
       </div>
-      <div className="role">
+      <div
+        className="role hero-enter"
+        style={{ "--delay": "160ms" } as React.CSSProperties}
+      >
         &gt; {currentRole}
         <span className="cursor">_</span>
       </div>
-      <div className="hero-bottom">
+      <div
+        className="hero-bottom hero-enter"
+        style={{ "--delay": "240ms" } as React.CSSProperties}
+      >
         <div className="hero-actions">
           <a className="button button-fill" href="#work">
             Ver mi trabajo <Arrow />

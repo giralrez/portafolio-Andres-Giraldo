@@ -1,20 +1,23 @@
 import githubData from "@/data/github.json";
 import projects from "@/data/projects.json";
+import { useReveal } from "@/hooks/useReveal";
 import Arrow from "./Arrow";
 import SectionHead from "./SectionHead";
 
 const featured = projects[0] as (typeof projects)[number];
 
 function Projects() {
+  const sectionRef = useReveal<HTMLElement>();
+
   return (
-    <section className="section shell work" id="work">
+    <section className="section shell work reveal" id="work" ref={sectionRef}>
       <SectionHead number="03" label="Proyectos" />
       <div className="work-heading">
         <h2>Proyecto destacado</h2>
         <span>{featured.eyebrow}</span>
       </div>
       <article className="project-card">
-        <div className="dashboard" aria-label="Dashboard preview">
+        <div className="dashboard" aria-label="Vista previa del dashboard">
           <div className="dash-sidebar">
             <b>{featured.title.substring(0, 2).toUpperCase()}</b>
             <i />

@@ -1,4 +1,5 @@
 import type { ProfileData } from "@/data/types";
+import { useReveal } from "@/hooks/useReveal";
 import SectionHead from "./SectionHead";
 
 interface AboutProps {
@@ -6,11 +7,13 @@ interface AboutProps {
 }
 
 function About({ profile }: AboutProps) {
+  const sectionRef = useReveal<HTMLElement>();
+
   return (
-    <section className="section shell about" id="about">
+    <section className="section shell about reveal" id="about" ref={sectionRef}>
       <SectionHead number="01" label="Acerca" />
       <div className="about-grid">
-        <div className="portrait-wrap reveal">
+        <div className="portrait-wrap">
           <img src={profile.about.photo} alt={profile.name} />
           <div className="portrait-note">
             <i /> construyendo ahora
@@ -23,8 +26,12 @@ function About({ profile }: AboutProps) {
         </div>
       </div>
       <div className="stats">
-        {profile.stats.map((stat) => (
-          <div key={stat.label}>
+        {profile.stats.map((stat, index) => (
+          <div
+            key={stat.label}
+            className="stagger"
+            style={{ "--i": index } as React.CSSProperties}
+          >
             <strong>{stat.value}</strong>
             <span>{stat.label}</span>
           </div>
